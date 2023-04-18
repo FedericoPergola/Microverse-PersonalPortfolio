@@ -14,7 +14,9 @@ body{
     justify-content: end;
     background-color: #be3144;
     width: 100%;
-    padding: 20px;
+    padding: 20px 0px 20px 20px;
+    position: fixed;
+    top: 0;
 }
 
 .nav-items a{
@@ -30,4 +32,74 @@ a{
 
 ul{
     list-style: none;
+}
+
+#welcome-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+
+#welcome-section span{
+    color: #be3144;
+    font-size: 2rem;
+}
+
+#welcome-section h1{
+    font-size: 4rem;
+}
+
+#projects{
+    background-color: #45567d;
+}
+
+#projects h2{
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 40px;
+}
+
+.projects-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 100%;
+    max-width: 1200px;
+    gap: 3rem;
+    margin: auto;
+    margin-top: 20px;
+   
+}
+
+.projects-cards a{
+    background-color: #303841;
+}
+
+.projects-cards img{
+    height: calc(100% - 4rem);
+    object-fit: cover;
+    width: 100%;
+}
+
+.projects-cards p{
+    font-size: 1rem;
+    text-align: center;
+    padding: 20px;
+}
+
+.btn{
+    background-color: #303841;
+    border: none;
+    font-size: 1rem;
+    padding: 15px;
+    color: #f0f0f0;
+}
+
+.btn-show{
+    display: flex;
+    justify-content: center;
+    padding: 35px;
 }
